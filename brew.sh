@@ -115,7 +115,6 @@ brew install youtube-dl
 brew install mdv
 brew install ncdu
 brew install nginx
-brew install node
 brew install parallel
 brew install reattach-to-user-namespace
 brew install redis
