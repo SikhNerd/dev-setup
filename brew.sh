@@ -181,7 +181,8 @@ virtualbox
 vlc
 adobe-acrobat-reader
 airflow
-
+android-sdk
+android-studio
 
 # Remove outdated versions from the cellar.
 brew cleanup
