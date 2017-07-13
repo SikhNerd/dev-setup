@@ -21,6 +21,13 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
+# Install Cask
+brew tap caskroom/cask
+brew tap caskroom/versions
+
+# Several things below need this as a dep
+brew cask install java
+
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -55,7 +62,6 @@ brew install git
 brew install git-lfs
 brew install git-flow
 brew install git-extras
-brew install gitstats
 
 # Install Python
 brew install python
@@ -92,9 +98,7 @@ heroku update
 
 # My List
 brew install apache-spark
-brew install cassandra@2.1
 brew install dos2unix
-brew install elasticsearch@2.4
 brew install elinks
 brew install gawk
 brew install gcc
@@ -108,7 +112,6 @@ brew install jo
 brew install jq
 brew install macvim
 brew install mas
-brew install maven
 brew install mdp
 brew install ffmpeg --with-fdk-aac --with-libass --with-libsoxr --with-libssh --with-libvidstab --with-opencore-amr --with-openh264 --with-openjpeg --with-openssl --with-rtmpdump --with-rubberband --with-schroedinger --with-snappy --with-tools --with-webp --with-x265 --with-xz --with-zeromq --with-zimg --with-fontconfig --with-freetype --with-frei0r --with-libbluray --with-libbs2b --with-libcaca --with-libvorbis --with-libvpx --with-opus --with-speex --with-theora
 brew install youtube-dl
@@ -119,7 +122,6 @@ brew install parallel
 brew install reattach-to-user-namespace
 brew install redis
 brew install ripgrep
-brew install sbt
 brew install source-highlight
 brew install spoof-mac
 brew install stow
@@ -131,15 +133,14 @@ brew install curl
 echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.bash_profile
 brew install ant@1.9
 brew install fdupes
-
-# Install Cask
-brew tap caskroom/cask
-brew tap caskroom/versions
+brew install cassandra@2.1
+brew install gradle
+brew install maven
+brew install elasticsearch@2.4
+brew install sbt
 
 # Core casks
 brew cask install iterm2
-brew cask install java
-brew install gradle
 brew cask install xquartz
 
 # Development tool casks
@@ -172,7 +173,6 @@ brew cask install skype
 brew cask install slimbatterymonitor
 brew cask install spectacle
 brew cask install transmission
-brew cask install virtualbox
 brew cask install vlc
 brew cask install adobe-acrobat-reader
 brew cask install airflow
