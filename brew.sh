@@ -55,16 +55,11 @@ brew install git
 brew install git-lfs
 brew install git-flow
 brew install git-extras
+brew install gitstats
 
 # Install Python
 brew install python
 brew install python3
-
-# Install ruby-build and rbenv
-brew install ruby-build
-brew install rbenv
-LINE='eval "$(rbenv init -)"'
-grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -77,7 +72,6 @@ brew install screen
 brew install ack
 brew install nmap
 brew install imagemagick --with-webp --with-ghostscript --with-librsvg
-brew install lynx
 brew install pigz
 brew install pv
 brew install rhino
@@ -96,14 +90,60 @@ brew link libxslt --force
 brew install heroku-toolbelt
 heroku update
 
+# My List
+brew install apache-spark
+brew install cassandra@2.1
+brew install dos2unix
+brew install elasticsearch@2.4
+brew install elinks
+brew install gawk
+brew install gcc
+brew install gnu-tar
+brew install gnu-time --with-default-names
+brew install gzip
+brew install htop-osx
+brew install httpie
+brew install httping
+brew install jo
+brew install jq
+brew install macvim
+brew install mas
+brew install maven
+brew install mdp
+brew install ffmpeg --with-fdk-aac --with-libass --with-libsoxr --with-libssh --with-libvidstab --with-opencore-amr --with-openh264 --with-openjpeg --with-openssl --with-rtmpdump --with-rubberband --with-schroedinger --with-snappy --with-tools --with-webp --with-x265 --with-xz --with-zeromq --with-zimg --with-fontconfig --with-freetype --with-frei0r --with-libbluray --with-libbs2b --with-libcaca --with-libvorbis --with-libvpx --with-opus --with-speex --with-theora
+brew install youtube-dl
+brew install mdv
+brew install ncdu
+brew install nginx
+brew install node
+brew install parallel
+brew install reattach-to-user-namespace
+brew install redis
+brew install ripgrep
+brew install sbt
+brew install source-highlight
+brew install spoof-mac
+brew install stow
+brew install the_silver_searcher
+brew install tig
+brew install tmux
+brew install watch
+brew install curl
+echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.bash_profile
+brew install ant@1.9
+brew install fdupes
+
+
+
 # Install Cask
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 
 # Core casks
 brew cask install alfred
 brew cask install iterm2
 brew cask install java
+brew install gradle
 brew cask install xquartz
 
 # Development tool casks
