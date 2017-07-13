@@ -161,28 +161,49 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 
 # Personal casks
-the-unarchiver
-appcleaner
-#clipmenu
-#dropbox
-firefox
-flux
-google-chrome
-hermes
-#libreoffice
-opera
-scansnap-manager
-skype
-slimbatterymonitor
-spectacle
-#steam
-transmission
-virtualbox
-vlc
-adobe-acrobat-reader
-airflow
-android-sdk
-android-studio
+brew cask install the-unarchiver
+brew cask install appcleaner
+brew cask install firefox
+brew cask install flux
+brew cask install google-chrome
+brew cask install hermes
+brew cask install opera
+brew cask install scansnap-manager
+brew cask install skype
+brew cask install slimbatterymonitor
+brew cask install spectacle
+brew cask install transmission
+brew cask install virtualbox
+brew cask install vlc
+brew cask install adobe-acrobat-reader
+brew cask install airflow
+brew cask install android-sdk
+brew cask install android-studio
+brew cask install dash
+brew cask install diffmerge
+brew cask install discord
+brew cask install firefoxdeveloperedition
+brew cask install insomnia
+brew cask install itsycal
+brew cask install numi
+brew cask install typora
+brew cask install visual-studio-code
+#brew cask install steam
+#brew cask install dropbox
+
+# Need to be manually installed:
+# lastpass
+# clipmenu
+# libreoffice
+# Paste beta
+# Pixelmator
+# Jetbrains pro stuff
+# Private internet access
+# sgdv
+# isg
+# Logitech Options
+# Microsoft Office
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
