@@ -133,14 +133,11 @@ echo 'export PATH="/usr/local/opt/curl/bin:$PATH"' >> ~/.bash_profile
 brew install ant@1.9
 brew install fdupes
 
-
-
 # Install Cask
 brew tap caskroom/cask
 brew tap caskroom/versions
 
 # Core casks
-brew cask install alfred
 brew cask install iterm2
 brew cask install java
 brew install gradle
@@ -156,15 +153,35 @@ brew cask install macdown
 brew cask install google-chrome
 brew cask install firefox
 brew cask install skype
-brew cask install slack
-brew cask install dropbox
-brew cask install evernote
-brew cask install 1password
 brew cask install gimp
 brew cask install inkscape
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+
+
+# Personal casks
+the-unarchiver
+appcleaner
+#clipmenu
+#dropbox
+firefox
+flux
+google-chrome
+hermes
+#libreoffice
+opera
+scansnap-manager
+skype
+slimbatterymonitor
+spectacle
+#steam
+transmission
+virtualbox
+vlc
+adobe-acrobat-reader
+airflow
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
